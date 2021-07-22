@@ -13,14 +13,15 @@ openBtn.addEventListener("click", popAddWindow);
 const cancelBtn = document.getElementById("cancel");
 cancelBtn.addEventListener("click", closeAddWindow);
 
+const modal = document.getElementById("add-window");
+modal.addEventListener("click", closeAddWindow);
+
 function popAddWindow () {
-  let openWindow = document.getElementById("add-window");
-  openWindow.style.display = "block";
+  modal.style.display = "block";
 }
 
 function closeAddWindow () {
-  let closeWindow = document.getElementById("add-window");
-  closeWindow.style.display = "none";
+  modal.style.display = "none";
   document.getElementById("todo-item").value = "";
 }
 
