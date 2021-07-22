@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <title>To-do List</title>
+	</head>
+	<body>
+    <div class="todo-wrapper">
+      <div class="title">
+        <h1>To-do List</h1>
+        <span id="open">+</span>
+      </div>
+      <ul id="list">
+        <li id="ex1">hello, to-do list!</li>
+        <li id="ex2" class="completed">this is completed element.</li>
+      </ul>
+      <p id="clear" class="clear-btn">Clear Completed</p>
+      <p id="clearall" class="clear-all-btn">Clear All</p>
+    </div>
+    
+    <div class="wrapper" id="add-window">
+      <div class="add-wrapper">
+        <h1>Add new item</h1>
+        <input type="text" placeholder="To-do" id="todo-item">
+        <p id="add">Add</p>
+        <p id="cancel">Cancel</p>
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+	</body>
+</html>
